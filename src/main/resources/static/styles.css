@@ -1,0 +1,60 @@
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.exp-img {
+	width : 200px;
+	height: 113px;
+}
+
+figure {
+	text-align : center;
+	border : 2px solid aliceblue;
+	border-radius : 3px;
+}
+
+figure:hover {
+	background : aliceblue;
+}
+
+.scaleup {
+	transition : all .3s ease-in-out;
+}
+
+.card-img {
+	width: 242px;
+	height: 342px;
+	
+}
+
+.scaleup:hover {
+	transform: scale(1.2);
+}
+
+.container {
+	display : flex;
+	justify-content : space-between;
+	flex-wrap: wrap;
+	padding: 5px;
+}
+
+.card {
+	display : flex;
+	justify-content : flex-start;
+	font-size: 2em;
+	padding: 10px;
+	align-items : flex-end;
+}
+
+.grid-container {
+	display : grid;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 200px 200px ;
+}
+
+.item {
+	flex-grow : 1;
+}

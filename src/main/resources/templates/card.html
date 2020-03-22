@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Pokémon Card</title>
+<link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+	<div class="card">
+		<figure>
+			<img th:src="${PokemonCard.imageUrl}"
+				class="scaleup scaleup-hover card-img" />
+			<figcaption th:text="${PokemonCard.name}"></figcaption>
+		</figure>
+		<div class="grid-container">
+			<div>Hp:</div>
+			<div th:text=${PokemonCard.hp}></div>
+			<div>Supertype</div>
+			<div th:text=${PokemonCard.supertype}></div>
+		</div>
+	</div>
+</body>
+</html>

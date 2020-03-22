@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<title>Pokemon tcg</title>
+<link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+	<div class="container">
+		<div th:each="pokemonCard : ${PokemonCards}">
+			<div class=item>
+			<a th:href="@{/cards/{id}(id=${pokemonCard.id})}">
+				<figure>
+					<img th:src="${pokemonCard.imageUrl}" class="scaleup scaleup-hover card-img"/>
+					<figcaption th:text="${pokemonCard.name}"></figcaption>
+				</figure>
+			</div>
+			</a>
+		</div>
+	</div>
+
+</body>
+</html>
